@@ -1,0 +1,97 @@
+@import url(../css/responsiveness.css);
+@import url(../css/colors.css);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.logo_image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.title{
+    font-family: 'Courgette', sans-serif;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.mes_text{
+    margin: 1rem;
+}
+.forgot_password-link,
+.signup-link{
+    text-decoration: none;
+    font-size: 16px;
+}
+input{
+    border-radius: 10px;
+    border: 1px solid var(--light-grey);
+}
+input[type="submit"]{
+    background: var(--primary-color) ;
+    color: var(--white-color);
+}
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.checkbox label {
+    margin-left: 1rem;
+}
+.redirection{
+ display: flex;
+ flex-direction: row;
+ gap: 0.5rem;
+ align-items: center;
+ justify-content: center;
+}
+.column{
+    display: flex;
+    flex-direction: row;
+    margin: 0 2rem;
+    align-items: center;
+ justify-content: center;
+}
+
+.modal {
+    display: none;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 400px;
+    text-align: center;
+  }
+  button{
+    margin-top: 2rem;
+    height: 30px;
+    width: calc(100% - 30px);
+    background-color: var(--primary-color);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: var(--white-color);
+  }
